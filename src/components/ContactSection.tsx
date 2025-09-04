@@ -20,7 +20,7 @@ const ContactSection = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="gradient-card shadow-card animate-on-scroll">
+          <Card className="gradient-card shadow-card hover:shadow-tech tech-hover animate-tech-glow animate-on-scroll">
             <CardHeader>
               <CardTitle className="text-2xl">Solicite uma demonstração</CardTitle>
             </CardHeader>
@@ -58,12 +58,14 @@ const ContactSection = () => {
 
           {/* Contact Info */}
           <div className="space-y-8 animate-on-scroll">
-            <Card className="gradient-card shadow-card">
-              <CardContent className="p-8">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-accent/10 p-3 rounded-lg">
-                    <MessageCircle className="h-6 w-6 text-accent" />
-                  </div>
+            <Card className="gradient-card shadow-card hover:shadow-tech tech-hover">
+              <CardContent className="p-8 relative overflow-hidden">
+                <div className="absolute inset-0 gradient-tech opacity-30"></div>
+                <div className="relative z-10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="bg-primary/20 p-3 rounded-lg shadow-tech">
+                      <MessageCircle className="h-6 w-6 text-primary" />
+                    </div>
                   <div>
                     <h3 className="font-semibold">WhatsApp</h3>
                     <p className="text-muted-foreground">Fale conosco agora</p>
@@ -71,41 +73,25 @@ const ContactSection = () => {
                 </div>
                 <Button 
                   variant="outline" 
-                  className="w-full hover:bg-accent hover:text-accent-foreground transition-smooth"
+                  className="w-full hover:bg-primary hover:text-primary-foreground hover:shadow-tech transition-tech"
                   onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1%20%F0%9F%91%8B,%20seja%20bem-vindo(a)%20%C3%A0%20FlowBot!%20%F0%9F%9A%80%0AAqui%20voc%C3%AA%20encontra%20solu%C3%A7%C3%B5es%20em%20automa%C3%A7%C3%A3o%20de%20atendimento%20e%20intelig%C3%AAncia%20artificial%20para%20transformar%20suas%20vendas%20e%20agilizar%20o%20contato%20com%20clientes.%0A%0A%E2%9C%85%20Criamos%20funis%20automatizados%20funcionando%2024h/dia%0A%E2%9C%85%20IA%20integrada%20(GPT-4o)%20para%20atender', '_blank')}
                 >
                   <MessageCircle className="mr-2 h-4 w-4" />
                   (81) 9 92530-6030
                 </Button>
-              </CardContent>
-            </Card>
+              </div>
+            </CardContent>
+          </Card>
 
-            <Card className="gradient-card shadow-card">
-              <CardContent className="p-8">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <Phone className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Telefone</h3>
-                    <p className="text-muted-foreground">Converse gratuitamente com a IA</p>
-                  </div>
-                </div>
-                <div className="bg-muted/50 p-4 rounded-lg">
-                  <p className="text-sm text-center text-muted-foreground mb-2">
-                    Converse gratuitamente com a IA
-                  </p>
-                  <p className="font-semibold text-center">(81) 9 92530-6030</p>
-                </div>
-              </CardContent>
-            </Card>
 
-            <Card className="gradient-card shadow-card">
-              <CardContent className="p-8">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-secondary/10 p-3 rounded-lg">
-                    <MapPin className="h-6 w-6 text-secondary" />
-                  </div>
+            <Card className="gradient-card shadow-card hover:shadow-tech tech-hover">
+              <CardContent className="p-8 relative overflow-hidden">
+                <div className="absolute inset-0 gradient-tech opacity-30"></div>
+                <div className="relative z-10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="bg-primary/20 p-3 rounded-lg shadow-tech">
+                      <MapPin className="h-6 w-6 text-primary" />
+                    </div>
                   <div>
                     <h3 className="font-semibold">Localização</h3>
                     <p className="text-muted-foreground">Pernambuco, Brasil</p>
@@ -115,8 +101,9 @@ const ContactSection = () => {
                   Atendemos clientes em todo o Brasil com soluções personalizadas 
                   em automação e inteligência artificial.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </CardContent>
+          </Card>
           </div>
         </div>
       </div>

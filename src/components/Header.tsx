@@ -27,11 +27,8 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="outline" className="hover:bg-primary hover:text-primary-foreground transition-smooth">
-            Login
-          </Button>
           <Button 
-            className="gradient-primary text-white shadow-elegant hover:shadow-glow transition-smooth"
+            className="gradient-primary text-white shadow-elegant hover:shadow-glow hover:shadow-[0_0_40px_rgba(108,155,255,0.6)] transition-all duration-300 transform hover:scale-105"
             onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1%20%F0%9F%91%8B,%20seja%20bem-vindo(a)%20%C3%A0%20FlowBot!%20%F0%9F%9A%80%0AAqui%20voc%C3%AA%20encontra%20solu%C3%A7%C3%B5es%20em%20automa%C3%A7%C3%A3o%20de%20atendimento%20e%20intelig%C3%AAncia%20artificial%20para%20transformar%20suas%20vendas%20e%20agilizar%20o%20contato%20com%20clientes.%0A%0A%E2%9C%85%20Criamos%20funis%20automatizados%20funcionando%2024h/dia%0A%E2%9C%85%20IA%20integrada%20(GPT-4o)%20para%20atender', '_blank')}
           >
             Demonstração Gratuita
@@ -56,7 +53,6 @@ const Header = () => {
               <a href="#beneficios" className="hover:text-primary transition-smooth">Benefícios</a>
               <a href="#contato" className="hover:text-primary transition-smooth">Contato</a>
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button variant="outline">Login</Button>
                 <Button 
                   className="gradient-primary text-white"
                   onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1%20%F0%9F%91%8B,%20seja%20bem-vindo(a)%20%C3%A0%20FlowBot!%20%F0%9F%9A%80%0AAqui%20voc%C3%AA%20encontra%20solu%C3%A7%C3%B5es%20em%20automa%C3%A7%C3%A3o%20de%20atendimento%20e%20intelig%C3%AAncia%20artificial%20para%20transformar%20suas%20vendas%20e%20agilizar%20o%20contato%20com%20clientes.%0A%0A%E2%9C%85%20Criamos%20funis%20automatizados%20funcionando%2024h/dia%0A%E2%9C%85%20IA%20integrada%20(GPT-4o)%20para%20atender', '_blank')}

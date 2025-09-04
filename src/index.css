@@ -40,17 +40,20 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* FlowBot Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(222, 100%, 70%), hsl(230, 65%, 30%));
-    --gradient-hero: linear-gradient(135deg, hsl(230, 65%, 30%), hsl(222, 100%, 70%));
-    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%), hsl(0, 0%, 98%));
+    --gradient-primary: linear-gradient(135deg, hsl(222, 100%, 70%), hsl(230, 65%, 30%), hsl(222, 100%, 80%));
+    --gradient-hero: linear-gradient(135deg, hsl(230, 65%, 30%), hsl(222, 100%, 70%), hsl(240, 100%, 85%));
+    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%), hsl(222, 20%, 98%));
+    --gradient-tech: radial-gradient(circle at 50% 50%, hsl(222, 100%, 70% / 0.2), transparent 70%);
 
     /* FlowBot Shadows */
-    --shadow-elegant: 0 10px 40px -10px hsl(222, 100%, 70% / 0.2);
-    --shadow-glow: 0 0 30px hsl(222, 100%, 70% / 0.3);
-    --shadow-card: 0 4px 20px hsl(0, 0%, 11% / 0.1);
+    --shadow-elegant: 0 10px 40px -10px hsl(222, 100%, 70% / 0.3);
+    --shadow-glow: 0 0 40px hsl(222, 100%, 70% / 0.4), 0 0 80px hsl(222, 100%, 70% / 0.2);
+    --shadow-card: 0 8px 32px hsl(222, 100%, 70% / 0.1);
+    --shadow-tech: 0 0 60px hsl(222, 100%, 70% / 0.5), inset 0 0 60px hsl(222, 100%, 70% / 0.1);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-tech: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -92,9 +95,10 @@ All colors MUST be HSL.
     --ring: 222 100% 70%;
 
     /* Dark mode gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(222, 100%, 70%), hsl(230, 65%, 30%));
-    --gradient-hero: linear-gradient(135deg, hsl(0, 0%, 8%), hsl(222, 100%, 60%));
-    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 15%), hsl(0, 0%, 18%));
+    --gradient-primary: linear-gradient(135deg, hsl(222, 100%, 70%), hsl(230, 65%, 30%), hsl(222, 100%, 80%));
+    --gradient-hero: linear-gradient(135deg, hsl(0, 0%, 8%), hsl(222, 100%, 60%), hsl(240, 100%, 70%));
+    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 15%), hsl(222, 20%, 18%));
+    --gradient-tech: radial-gradient(circle at 50% 50%, hsl(222, 100%, 70% / 0.3), transparent 70%);
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -130,6 +134,18 @@ All colors MUST be HSL.
     background: var(--gradient-card);
   }
 
+  .gradient-tech {
+    background: var(--gradient-tech);
+  }
+
+  .shadow-tech {
+    box-shadow: var(--shadow-tech);
+  }
+
+  .transition-tech {
+    transition: var(--transition-tech);
+  }
+
   .shadow-elegant {
     box-shadow: var(--shadow-elegant);
   }
@@ -153,8 +169,30 @@ All colors MUST be HSL.
   }
 
   @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 20px hsl(222, 100%, 70% / 0.3); }
-    50% { box-shadow: 0 0 40px hsl(222, 100%, 70% / 0.6); }
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(222, 100%, 70% / 0.3);
+      transform: scale(1);
+    }
+    50% { 
+      box-shadow: 0 0 60px hsl(222, 100%, 70% / 0.8), 0 0 100px hsl(222, 100%, 70% / 0.4);
+      transform: scale(1.02);
+    }
+  }
+
+  @keyframes tech-glow {
+    0%, 100% {
+      box-shadow: 0 0 30px hsl(222, 100%, 70% / 0.4);
+    }
+    50% {
+      box-shadow: 0 0 60px hsl(222, 100%, 70% / 0.8), 0 0 90px hsl(222, 100%, 70% / 0.4);
+    }
+  }
+
+  @keyframes matrix-rain {
+    0% { transform: translateY(-100vh); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
   }
 
   @keyframes slide-up {
@@ -174,6 +212,19 @@ All colors MUST be HSL.
 
   .animate-pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-tech-glow {
+    animation: tech-glow 3s ease-in-out infinite;
+  }
+
+  .tech-hover {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .tech-hover:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 40px hsl(222, 100%, 70% / 0.3);
   }
 
   .animate-slide-up {

@@ -38,10 +38,11 @@ const ServicesSection = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
-            <Card key={index} className="gradient-card shadow-card hover:shadow-elegant transition-smooth animate-on-scroll">
+            <Card key={index} className="gradient-card shadow-card hover:shadow-tech tech-hover animate-tech-glow animate-on-scroll">
               <CardHeader>
-                <div className="bg-primary/10 p-4 rounded-xl w-fit mb-4">
-                  <div className="text-primary">
+                <div className="bg-primary/20 p-4 rounded-xl w-fit mb-4 shadow-tech relative overflow-hidden">
+                  <div className="absolute inset-0 gradient-tech opacity-30"></div>
+                  <div className="text-primary relative z-10">
                     {service.icon}
                   </div>
                 </div>
@@ -54,7 +55,7 @@ const ServicesSection = () => {
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-2 text-sm">
-                      <div className="w-1.5 h-1.5 bg-accent rounded-full"></div>
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></div>
                       {feature}
                     </li>
                   ))}
@@ -66,25 +67,25 @@ const ServicesSection = () => {
 
         {/* Promotional Images */}
         <div className="grid md:grid-cols-3 gap-8 mt-16">
-          <div className="animate-on-scroll">
+          <div className="animate-on-scroll tech-hover">
             <img 
               src="/lovable-uploads/dc11bdd4-5f8e-4137-897f-b21cc0c6f03d.png" 
               alt="Métricas de Qualidade FlowBot" 
-              className="rounded-xl shadow-card hover:shadow-elegant transition-smooth"
+              className="rounded-xl shadow-card hover:shadow-tech transition-tech"
             />
           </div>
-          <div className="animate-on-scroll">
+          <div className="animate-on-scroll tech-hover">
             <img 
               src="/lovable-uploads/0ae3722c-45ff-4fdb-afe8-def2f82aa4d9.png" 
               alt="Benefícios FlowBot" 
-              className="rounded-xl shadow-card hover:shadow-elegant transition-smooth"
+              className="rounded-xl shadow-card hover:shadow-tech transition-tech"
             />
           </div>
-          <div className="animate-on-scroll">
+          <div className="animate-on-scroll tech-hover">
             <img 
               src="/lovable-uploads/1a5524f1-b70f-47c7-ba5a-a278aa37ba23.png" 
               alt="Aumente suas Vendas" 
-              className="rounded-xl shadow-card hover:shadow-elegant transition-smooth"
+              className="rounded-xl shadow-card hover:shadow-tech transition-tech"
             />
           </div>
         </div>

@@ -7,7 +7,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Sobre a <span className="text-primary">FlowBot</span>
+            Sobre <span className="text-primary bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Erson Hiago</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Sou fundador da FlowBot, uma empresa que vem se consolidando como referência 
@@ -47,10 +47,11 @@ const AboutSection = () => {
             </p>
 
             <div className="grid grid-cols-1 gap-6">
-              <Card className="gradient-card shadow-card hover:shadow-elegant transition-smooth">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-primary/10 p-3 rounded-lg">
+              <Card className="gradient-card shadow-card hover:shadow-tech transition-tech tech-hover">
+                <CardContent className="p-6 relative overflow-hidden">
+                  <div className="absolute inset-0 gradient-tech opacity-20"></div>
+                  <div className="flex items-center gap-4 relative z-10">
+                    <div className="bg-primary/20 p-3 rounded-lg shadow-tech">
                       <Users className="h-6 w-6 text-primary" />
                     </div>
                     <div>
@@ -63,11 +64,12 @@ const AboutSection = () => {
                 </CardContent>
               </Card>
 
-              <Card className="gradient-card shadow-card hover:shadow-elegant transition-smooth">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-accent/10 p-3 rounded-lg">
-                      <Lightbulb className="h-6 w-6 text-accent" />
+              <Card className="gradient-card shadow-card hover:shadow-tech transition-tech tech-hover">
+                <CardContent className="p-6 relative overflow-hidden">
+                  <div className="absolute inset-0 gradient-tech opacity-20"></div>
+                  <div className="flex items-center gap-4 relative z-10">
+                    <div className="bg-primary/20 p-3 rounded-lg shadow-tech">
+                      <Lightbulb className="h-6 w-6 text-primary" />
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Novas Ideias</h4>
