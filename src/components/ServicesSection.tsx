@@ -27,10 +27,10 @@ const ServicesSection = () => {
     <section id="servicos" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
             Nossos <span className="text-primary">Serviços</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-medium leading-relaxed">
             Soluções completas em automação e inteligência artificial para transformar 
             seu atendimento e impulsionar suas vendas.
           </p>
@@ -46,15 +46,15 @@ const ServicesSection = () => {
                     {service.icon}
                   </div>
                 </div>
-                <CardTitle className="text-xl">{service.title}</CardTitle>
+                <CardTitle className="text-xl text-foreground font-bold">{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-6 font-medium leading-relaxed">
                   {service.description}
                 </p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-sm">
+                    <li key={idx} className="flex items-center gap-2 text-sm font-medium text-foreground">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></div>
                       {feature}
                     </li>

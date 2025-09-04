@@ -6,10 +6,10 @@ const AboutSection = () => {
     <section id="sobre" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Sobre <span className="text-primary bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Erson Hiago</span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
+            Sobre <span className="text-primary bg-gradient-to-r from-primary to-primary/70 bg-clip-text">Erson Hiago</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-medium leading-relaxed">
             Sou fundador da FlowBot, uma empresa que vem se consolidando como referência 
             em automação de atendimento e inteligência artificial no Brasil.
           </p>
@@ -30,17 +30,17 @@ const AboutSection = () => {
           </div>
 
           <div className="animate-on-scroll">
-            <h3 className="text-2xl font-bold mb-6">Sobre Mim</h3>
-            <p className="text-lg text-muted-foreground mb-6">
+            <h3 className="text-2xl font-bold mb-6 text-foreground">Sobre Mim</h3>
+            <p className="text-lg text-muted-foreground mb-6 font-medium leading-relaxed">
               Ao longo da minha trajetória, já participei da implementação de soluções para diferentes 
               setores, ajudando empresas a transformarem seus processos comerciais com tecnologia de ponta.
             </p>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-muted-foreground mb-6 font-medium leading-relaxed">
               Minha experiência abrange desde estratégias de CRM e análise de dados, até a criação de 
               chatbots avançados integrados com GPT-4, sistemas que aumentam a eficiência das equipes 
               e geram crescimento real para os negócios.
             </p>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-muted-foreground mb-8 font-medium leading-relaxed">
               Na FlowBot, lidero um time que acredita no futuro da automação, entregando projetos 
               personalizados e de alto impacto. Nosso objetivo é simples: tornar cada cliente mais 
               competitivo, moderno e preparado para o futuro digital.

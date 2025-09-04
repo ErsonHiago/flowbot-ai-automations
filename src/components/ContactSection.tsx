@@ -9,10 +9,10 @@ const ContactSection = () => {
     <section id="contato" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
             Vamos conversar sobre seu <span className="text-primary">projeto</span>?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-medium leading-relaxed">
             Entre em contato conosco e descubra como a FlowBot pode transformar 
             seu atendimento e impulsionar suas vendas.
           </p>

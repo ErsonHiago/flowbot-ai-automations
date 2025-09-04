@@ -20,12 +20,12 @@ const HeroSection = () => {
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Transforme seu <br />
-            <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-white via-blue-200 to-white bg-clip-text text-transparent">
               Atendimento
             </span> com IA
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-white/80 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto font-medium leading-relaxed">
             Mais agilidade, organização e eficiência no processo de vendas. 
             Nossa IA trabalha por você 24/7 para vender mais e atender melhor.
           </p>
@@ -33,7 +33,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-white shadow-tech hover:shadow-glow hover:shadow-[0_0_60px_rgba(108,155,255,0.8)] transition-all duration-300 transform hover:scale-105 animate-tech-glow"
+              className="bg-white text-primary font-semibold hover:bg-white/90 hover:text-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-tech-glow"
               onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1%20%F0%9F%91%8B,%20seja%20bem-vindo(a)%20%C3%A0%20FlowBot!%20%F0%9F%9A%80%0AAqui%20voc%C3%AA%20encontra%20solu%C3%A7%C3%B5es%20em%20automa%C3%A7%C3%A3o%20de%20atendimento%20e%20intelig%C3%AAncia%20artificial%20para%20transformar%20suas%20vendas%20e%20agilizar%20o%20contato%20com%20clientes.%0A%0A%E2%9C%85%20Criamos%20funis%20automatizados%20funcionando%2024h/dia%0A%E2%9C%85%20IA%20integrada%20(GPT-4o)%20para%20atender', '_blank')}
             >
               <Bot className="mr-2 h-5 w-5" />
@@ -41,7 +41,7 @@ const HeroSection = () => {
             </Button>
             <Button 
               size="lg" 
-              className="bg-white/20 backdrop-blur-sm border border-white/40 text-white hover:bg-white/30 hover:border-white/60 hover:shadow-[0_0_30px_rgba(108,155,255,0.5)] transition-all duration-300 transform hover:scale-105"
+              className="bg-white/25 backdrop-blur-md border-2 border-white/50 text-white font-semibold hover:bg-white/35 hover:border-white/70 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-300 transform hover:scale-105"
               onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1%20%F0%9F%91%8B,%20seja%20bem-vindo(a)%20%C3%A0%20FlowBot!%20%F0%9F%9A%80%0AAqui%20voc%C3%AA%20encontra%20solu%C3%A7%C3%B5es%20em%20automa%C3%A7%C3%A3o%20de%20atendimento%20e%20intelig%C3%AAncia%20artificial%20para%20transformar%20suas%20vendas%20e%20agilizar%20o%20contato%20com%20clientes.%0A%0A%E2%9C%85%20Criamos%20funis%20automatizados%20funcionando%2024h/dia%0A%E2%9C%85%20IA%20integrada%20(GPT-4o)%20para%20atender', '_blank')}
             >
               Agendar demonstração
@@ -49,17 +49,17 @@ const HeroSection = () => {
             </Button>
           </div>
           
-          <div className="flex items-center justify-center gap-8 text-sm text-white/60">
+          <div className="flex items-center justify-center gap-8 text-sm text-white/90 font-medium">
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
               <span>GPT-4o Integrado</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
               <span>24/7 Disponível</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
               <span>Setup Rápido</span>
             </div>
           </div>

@@ -19,11 +19,11 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#inicio" className="hover:text-primary transition-smooth">Início</a>
-          <a href="#sobre" className="hover:text-primary transition-smooth">Sobre</a>
-          <a href="#servicos" className="hover:text-primary transition-smooth">Serviços</a>
-          <a href="#beneficios" className="hover:text-primary transition-smooth">Benefícios</a>
-          <a href="#contato" className="hover:text-primary transition-smooth">Contato</a>
+          <a href="#inicio" className="text-foreground hover:text-primary transition-smooth font-medium">Início</a>
+          <a href="#sobre" className="text-foreground hover:text-primary transition-smooth font-medium">Sobre</a>
+          <a href="#servicos" className="text-foreground hover:text-primary transition-smooth font-medium">Serviços</a>
+          <a href="#beneficios" className="text-foreground hover:text-primary transition-smooth font-medium">Benefícios</a>
+          <a href="#contato" className="text-foreground hover:text-primary transition-smooth font-medium">Contato</a>
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
@@ -47,11 +47,11 @@ const Header = () => {
         {isMenuOpen && (
           <div className="absolute top-full left-0 w-full bg-background border-b border-border md:hidden">
             <nav className="flex flex-col p-4 gap-4">
-              <a href="#inicio" className="hover:text-primary transition-smooth">Início</a>
-              <a href="#sobre" className="hover:text-primary transition-smooth">Sobre</a>
-              <a href="#servicos" className="hover:text-primary transition-smooth">Serviços</a>
-              <a href="#beneficios" className="hover:text-primary transition-smooth">Benefícios</a>
-              <a href="#contato" className="hover:text-primary transition-smooth">Contato</a>
+              <a href="#inicio" className="text-foreground hover:text-primary transition-smooth font-medium">Início</a>
+              <a href="#sobre" className="text-foreground hover:text-primary transition-smooth font-medium">Sobre</a>
+              <a href="#servicos" className="text-foreground hover:text-primary transition-smooth font-medium">Serviços</a>
+              <a href="#beneficios" className="text-foreground hover:text-primary transition-smooth font-medium">Benefícios</a>
+              <a href="#contato" className="text-foreground hover:text-primary transition-smooth font-medium">Contato</a>
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
                 <Button 
                   className="gradient-primary text-white"
