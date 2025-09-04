@@ -49,7 +49,7 @@ const ContactSection = () => {
               </div>
               <Button 
                 className="w-full gradient-primary text-white shadow-elegant hover:shadow-glow transition-smooth"
-                onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1%20%F0%9F%91%8B,%20seja%20bem-vindo(a)%20%C3%A0%20FlowBot!%20%F0%9F%9A%80%0AAqui%20voc%C3%AA%20encontra%20solu%C3%A7%C3%B5es%20em%20automa%C3%A7%C3%A3o%20de%20atendimento%20e%20intelig%C3%AAncia%20artificial%20para%20transformar%20suas%20vendas%20e%20agilizar%20o%20contato%20com%20clientes.%0A%0A%E2%9C%85%20Criamos%20funis%20automatizados%20funcionando%2024h/dia%0A%E2%9C%85%20IA%20integrada%20(GPT-4o)%20para%20atender', '_blank')}
+                onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20demonstra%C3%A7%C3%A3o%20com%20voc%C3%AAs!%20', '_blank')}
               >
                 Quero uma demonstração gratuita
               </Button>
@@ -74,7 +74,7 @@ const ContactSection = () => {
                 <Button 
                   variant="outline" 
                   className="w-full hover:bg-primary hover:text-primary-foreground hover:shadow-tech transition-tech"
-                  onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1%20%F0%9F%91%8B,%20seja%20bem-vindo(a)%20%C3%A0%20FlowBot!%20%F0%9F%9A%80%0AAqui%20voc%C3%AA%20encontra%20solu%C3%A7%C3%B5es%20em%20automa%C3%A7%C3%A3o%20de%20atendimento%20e%20intelig%C3%AAncia%20artificial%20para%20transformar%20suas%20vendas%20e%20agilizar%20o%20contato%20com%20clientes.%0A%0A%E2%9C%85%20Criamos%20funis%20automatizados%20funcionando%2024h/dia%0A%E2%9C%85%20IA%20integrada%20(GPT-4o)%20para%20atender', '_blank')}
+                  onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20demonstra%C3%A7%C3%A3o%20com%20voc%C3%AAs!%20', '_blank')}
                 >
                   <MessageCircle className="mr-2 h-4 w-4" />
                   (81) 9 92530-6030

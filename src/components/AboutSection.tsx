@@ -16,12 +16,12 @@ const AboutSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div className="animate-on-scroll">
+          <div className="animate-on-scroll flex justify-center md:justify-end">
             <div className="relative">
               <img 
                 src="/lovable-uploads/f6329ec8-9275-4bea-8033-59975e83cf6b.png" 
                 alt="Fundador da FlowBot" 
-                className="rounded-2xl shadow-card w-full max-w-md mx-auto"
+                className="rounded-2xl shadow-card w-full max-w-md"
               />
               <div className="absolute -bottom-6 -right-6 bg-primary p-4 rounded-xl shadow-elegant">
                 <Target className="h-8 w-8 text-primary-foreground" />
@@ -29,7 +29,7 @@ const AboutSection = () => {
             </div>
           </div>
 
-          <div className="animate-on-scroll">
+          <div className="animate-on-scroll flex flex-col justify-center">
             <h3 className="text-2xl font-bold mb-6 text-foreground">Sobre Mim</h3>
             <p className="text-lg text-muted-foreground mb-6 font-medium leading-relaxed">
               Ao longo da minha trajetória, já participei da implementação de soluções para diferentes 
