@@ -10,8 +10,8 @@ const AboutSection = () => {
             Sobre a <span className="text-primary">FlowBot</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Somos uma empresa jovem e moderna que abraça novas ideias, utilizando a 
-            Inteligência Artificial como um facilitador estratégico e organizacional para equipes.
+            Sou fundador da FlowBot, uma empresa que vem se consolidando como referência 
+            em automação de atendimento e inteligência artificial no Brasil.
           </p>
         </div>
 
@@ -30,14 +30,20 @@ const AboutSection = () => {
           </div>
 
           <div className="animate-on-scroll">
-            <h3 className="text-2xl font-bold mb-6">Nossa Missão</h3>
+            <h3 className="text-2xl font-bold mb-6">Sobre Mim</h3>
             <p className="text-lg text-muted-foreground mb-6">
-              Transformar a forma como empresas se comunicam com seus clientes, oferecendo 
-              automação de atendimento, gestão de CRM e disparo de campanhas inteligentes.
+              Ao longo da minha trajetória, já participei da implementação de soluções para diferentes 
+              setores, ajudando empresas a transformarem seus processos comerciais com tecnologia de ponta.
+            </p>
+            <p className="text-lg text-muted-foreground mb-6">
+              Minha experiência abrange desde estratégias de CRM e análise de dados, até a criação de 
+              chatbots avançados integrados com GPT-4, sistemas que aumentam a eficiência das equipes 
+              e geram crescimento real para os negócios.
             </p>
             <p className="text-lg text-muted-foreground mb-8">
-              Nossa missão é ajudar empresas a venderem mais e atenderem melhor, 
-              com tecnologia que trabalha por elas 24 horas por dia, 7 dias por semana.
+              Na FlowBot, lidero um time que acredita no futuro da automação, entregando projetos 
+              personalizados e de alto impacto. Nosso objetivo é simples: tornar cada cliente mais 
+              competitivo, moderno e preparado para o futuro digital.
             </p>
 
             <div className="grid grid-cols-1 gap-6">

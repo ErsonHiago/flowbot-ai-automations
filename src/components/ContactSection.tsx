@@ -47,7 +47,10 @@ const ContactSection = () => {
                 <label className="text-sm font-medium mb-2 block">Como podemos ajudar?</label>
                 <Textarea placeholder="Conte-nos sobre seu projeto e objetivos..." />
               </div>
-              <Button className="w-full gradient-primary text-white shadow-elegant hover:shadow-glow transition-smooth">
+              <Button 
+                className="w-full gradient-primary text-white shadow-elegant hover:shadow-glow transition-smooth"
+                onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1%20%F0%9F%91%8B,%20seja%20bem-vindo(a)%20%C3%A0%20FlowBot!%20%F0%9F%9A%80%0AAqui%20voc%C3%AA%20encontra%20solu%C3%A7%C3%B5es%20em%20automa%C3%A7%C3%A3o%20de%20atendimento%20e%20intelig%C3%AAncia%20artificial%20para%20transformar%20suas%20vendas%20e%20agilizar%20o%20contato%20com%20clientes.%0A%0A%E2%9C%85%20Criamos%20funis%20automatizados%20funcionando%2024h/dia%0A%E2%9C%85%20IA%20integrada%20(GPT-4o)%20para%20atender', '_blank')}
+              >
                 Quero uma demonstração gratuita
               </Button>
             </CardContent>
@@ -66,9 +69,13 @@ const ContactSection = () => {
                     <p className="text-muted-foreground">Fale conosco agora</p>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full hover:bg-accent hover:text-accent-foreground transition-smooth">
+                <Button 
+                  variant="outline" 
+                  className="w-full hover:bg-accent hover:text-accent-foreground transition-smooth"
+                  onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1%20%F0%9F%91%8B,%20seja%20bem-vindo(a)%20%C3%A0%20FlowBot!%20%F0%9F%9A%80%0AAqui%20voc%C3%AA%20encontra%20solu%C3%A7%C3%B5es%20em%20automa%C3%A7%C3%A3o%20de%20atendimento%20e%20intelig%C3%AAncia%20artificial%20para%20transformar%20suas%20vendas%20e%20agilizar%20o%20contato%20com%20clientes.%0A%0A%E2%9C%85%20Criamos%20funis%20automatizados%20funcionando%2024h/dia%0A%E2%9C%85%20IA%20integrada%20(GPT-4o)%20para%20atender', '_blank')}
+                >
                   <MessageCircle className="mr-2 h-4 w-4" />
-                  (81) 9341-3717
+                  (81) 9 92530-6030
                 </Button>
               </CardContent>
             </Card>
@@ -88,7 +95,7 @@ const ContactSection = () => {
                   <p className="text-sm text-center text-muted-foreground mb-2">
                     Converse gratuitamente com a IA
                   </p>
-                  <p className="font-semibold text-center">(81) 9341-3717</p>
+                  <p className="font-semibold text-center">(81) 9 92530-6030</p>
                 </div>
               </CardContent>
             </Card>

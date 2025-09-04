@@ -53,9 +53,10 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				/* FlowBot Brand Colors */
-				'flowbot-purple': 'hsl(249, 100%, 70%)',
-				'flowbot-blue': 'hsl(240, 16%, 11%)',
-				'flowbot-green': 'hsl(162, 100%, 50%)',
+				'flowbot-blue': 'hsl(222, 100%, 70%)', /* #6C9BFF */
+				'flowbot-dark-blue': 'hsl(230, 65%, 30%)', /* #1E2A78 */
+				'flowbot-white': 'hsl(0, 0%, 100%)', /* #FFFFFF */
+				'flowbot-dark': 'hsl(0, 0%, 11%)', /* #1C1C1C */
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
