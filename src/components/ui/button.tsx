@@ -18,6 +18,10 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        /* FlowBot Custom Variants */
+        "gradient-primary": "gradient-primary text-white shadow-elegant hover:shadow-glow transition-smooth",
+        "hero": "bg-accent hover:bg-accent/90 text-secondary shadow-glow hover:shadow-xl transition-smooth",
+        "hero-outline": "border border-white/30 text-white bg-transparent hover:bg-white/10 transition-smooth",
       },
       size: {
         default: "h-10 px-4 py-2",
