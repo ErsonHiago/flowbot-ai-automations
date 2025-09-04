@@ -15,7 +15,7 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
           <div className="animate-on-scroll flex justify-center md:justify-end">
             <div className="relative">
               <img 
@@ -29,7 +29,7 @@ const AboutSection = () => {
             </div>
           </div>
 
-          <div className="animate-on-scroll flex flex-col justify-center">
+          <div className="animate-on-scroll flex flex-col">
             <h3 className="text-2xl font-bold mb-6 text-foreground">Sobre Mim</h3>
             <p className="text-lg text-muted-foreground mb-6 font-medium leading-relaxed">
               Ao longo da minha trajetória, já participei da implementação de soluções para diferentes 
