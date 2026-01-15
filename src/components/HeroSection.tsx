@@ -34,7 +34,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               className="bg-white text-primary font-semibold hover:bg-white/90 hover:text-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-tech-glow"
-              onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20demonstra%C3%A7%C3%A3o%20com%20voc%C3%AAs!%20', '_blank')}
+              onClick={() => window.open('https://wa.me/5581899639440?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20demonstra%C3%A7%C3%A3o%20com%20voc%C3%AAs!%20', '_blank')}
             >
               <Bot className="mr-2 h-5 w-5" />
               Quero automatizar meu atendimento
@@ -42,7 +42,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               className="bg-white/25 backdrop-blur-md border-2 border-white/50 text-white font-semibold hover:bg-white/35 hover:border-white/70 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-300 transform hover:scale-105"
-              onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20demonstra%C3%A7%C3%A3o%20com%20voc%C3%AAs!%20', '_blank')}
+              onClick={() => window.open('https://wa.me/5581899639440?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20demonstra%C3%A7%C3%A3o%20com%20voc%C3%AAs!%20', '_blank')}
             >
               Agendar demonstração
               <ArrowRight className="ml-2 h-5 w-5" />

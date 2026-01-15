@@ -1,4 +1,5 @@
-import { Bot, MessageCircle, Phone, Mail } from "lucide-react";
+import { MessageCircle, Phone, Mail } from "lucide-react";
+import flowbotLogo from "@/assets/flowbot-logo.png";
 
 const Footer = () => {
   return (
@@ -8,9 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-accent p-2 rounded-lg">
-                <Bot className="h-6 w-6 text-secondary" />
-              </div>
+              <img src={flowbotLogo} alt="FlowBot" className="h-10 w-10 object-contain" />
               <span className="text-xl font-bold">FlowBot</span>
             </div>
             <p className="text-white/80 mb-4">
@@ -58,7 +57,7 @@ const Footer = () => {
             <div className="space-y-3 text-white/80">
               <div className="flex items-center gap-2">
                 <MessageCircle className="h-4 w-4 text-accent" />
-                <span>(81) 9 92530-6030</span>
+                <span>(81) 8996-3940</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-accent" />

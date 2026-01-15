@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Bot, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import flowbotLogo from "@/assets/flowbot-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,9 +10,7 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="bg-primary p-2 rounded-lg animate-pulse-glow">
-            <Bot className="h-6 w-6 text-primary-foreground" />
-          </div>
+          <img src={flowbotLogo} alt="FlowBot" className="h-10 w-10 object-contain" />
           <span className="text-xl font-bold gradient-primary bg-clip-text text-transparent">
             FlowBot
           </span>
@@ -29,7 +28,7 @@ const Header = () => {
         <div className="hidden md:flex items-center gap-4">
           <Button 
             className="gradient-primary text-white shadow-elegant hover:shadow-glow hover:shadow-[0_0_40px_rgba(108,155,255,0.6)] transition-all duration-300 transform hover:scale-105"
-            onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20demonstra%C3%A7%C3%A3o%20com%20voc%C3%AAs!%20', '_blank')}
+            onClick={() => window.open('https://wa.me/5581899639440?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20demonstra%C3%A7%C3%A3o%20com%20voc%C3%AAs!%20', '_blank')}
           >
             Demonstração Gratuita
           </Button>
@@ -55,7 +54,7 @@ const Header = () => {
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
                 <Button 
                   className="gradient-primary text-white"
-                  onClick={() => window.open('https://wa.me/5581992536030?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20demonstra%C3%A7%C3%A3o%20com%20voc%C3%AAs!%20', '_blank')}
+                  onClick={() => window.open('https://wa.me/5581899639440?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20demonstra%C3%A7%C3%A3o%20com%20voc%C3%AAs!%20', '_blank')}
                 >
                   Demonstração Gratuita
                 </Button>
