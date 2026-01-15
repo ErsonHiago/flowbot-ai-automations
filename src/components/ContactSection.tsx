@@ -49,7 +49,7 @@ const ContactSection = () => {
               </div>
               <Button 
                 className="w-full gradient-primary text-white shadow-elegant hover:shadow-glow transition-smooth"
-                onClick={() => window.open('https://wa.me/5581899639440?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20demonstra%C3%A7%C3%A3o%20com%20voc%C3%AAs!%20', '_blank')}
+                onClick={() => window.open('https://wa.me/5581989963940?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20como%20automatizar%20meu%20neg%C3%B3cio!', '_blank')}
               >
                 Quero uma demonstração gratuita
               </Button>
@@ -74,10 +74,10 @@ const ContactSection = () => {
                 <Button 
                   variant="outline" 
                   className="w-full hover:bg-primary hover:text-primary-foreground hover:shadow-tech transition-tech"
-                  onClick={() => window.open('https://wa.me/5581899639440?text=Ol%C3%A1!%20Gostaria%20de%20marcar%20uma%20demonstra%C3%A7%C3%A3o%20com%20voc%C3%AAs!%20', '_blank')}
+                  onClick={() => window.open('https://wa.me/5581989963940?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20como%20automatizar%20meu%20neg%C3%B3cio!', '_blank')}
                 >
                   <MessageCircle className="mr-2 h-4 w-4" />
-                  (81) 8996-3940
+                  (81) 98996-3940
                 </Button>
               </div>
             </CardContent>
