@@ -56,10 +56,15 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Contato</h3>
             <div className="space-y-3 text-white/80">
-              <div className="flex items-center gap-2">
+              <a 
+                href="https://wa.me/558189963940?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20como%20automatizar%20minhas%20vendas!" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-accent transition-smooth"
+              >
                 <MessageCircle className="h-4 w-4 text-accent" />
-                <span>(81) 98996-3940</span>
-              </div>
+                <span>(81) 8996-3940</span>
+              </a>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-accent" />
                 <span>Converse com a IA</span>
