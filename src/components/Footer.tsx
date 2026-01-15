@@ -57,7 +57,7 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Contato</h3>
             <div className="space-y-3 text-white/80">
               <a 
-                href="https://wa.link/6jkh1n" 
+                href="https://wa.link/nipwbr" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-accent transition-smooth"

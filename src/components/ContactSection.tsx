@@ -49,7 +49,7 @@ const ContactSection = () => {
               </div>
               <Button 
                 className="w-full gradient-primary text-white shadow-elegant hover:shadow-glow transition-smooth"
-                onClick={() => window.open('https://wa.link/6jkh1n', '_blank')}
+                onClick={() => window.open('https://wa.link/nipwbr', '_blank')}
               >
                 Quero uma demonstração gratuita
               </Button>
@@ -74,7 +74,7 @@ const ContactSection = () => {
                 <Button 
                   variant="outline" 
                   className="w-full hover:bg-primary hover:text-primary-foreground hover:shadow-tech transition-tech"
-                  onClick={() => window.open('https://wa.link/6jkh1n', '_blank')}
+                  onClick={() => window.open('https://wa.link/nipwbr', '_blank')}
 >
                   <MessageCircle className="mr-2 h-4 w-4" />
                   (81) 8996-3940
