@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Bot, Menu, X } from "lucide-react";
 import { useState } from "react";
-import flowbotLogo from "@/assets/flowbot-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +9,9 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src={flowbotLogo} alt="FlowBot" className="h-10 w-10 object-contain" />
+          <div className="bg-primary p-2 rounded-lg animate-pulse-glow">
+            <Bot className="h-6 w-6 text-primary-foreground" />
+          </div>
           <span className="text-xl font-bold gradient-primary bg-clip-text text-transparent">
             FlowBot
           </span>
