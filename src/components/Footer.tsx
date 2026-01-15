@@ -58,7 +58,7 @@ const Footer = () => {
             <div className="space-y-3 text-white/80">
               <div className="flex items-center gap-2">
                 <MessageCircle className="h-4 w-4 text-accent" />
-                <span>(81) 8996-3940</span>
+                <span>(81) 98996-3940</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-accent" />
