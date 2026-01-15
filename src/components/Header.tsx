@@ -29,7 +29,7 @@ const Header = () => {
         <div className="hidden md:flex items-center gap-4">
           <Button 
             className="gradient-primary text-white shadow-elegant hover:shadow-glow hover:shadow-[0_0_40px_rgba(108,155,255,0.6)] transition-all duration-300 transform hover:scale-105"
-            onClick={() => window.open('https://wa.link/6jkh1n', '_blank')}
+            onClick={() => window.open('https://wa.link/nipwbr', '_blank')}
           >
             Demonstração Gratuita
           </Button>
@@ -55,7 +55,7 @@ const Header = () => {
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
                 <Button 
                   className="gradient-primary text-white"
-                  onClick={() => window.open('https://wa.link/6jkh1n', '_blank')}
+                  onClick={() => window.open('https://wa.link/nipwbr', '_blank')}
                 >
                   Demonstração Gratuita
                 </Button>
