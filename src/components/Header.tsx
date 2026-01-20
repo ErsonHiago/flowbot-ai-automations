@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Bot, Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -6,59 +5,62 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+    <header className="header-styled fixed top-0 w-full z-[999]">
+      <div className="container mx-auto px-5 h-[72px] flex items-center justify-between">
+        {/* Logo */}
+        <div className="flex items-center gap-2.5">
           <div className="bg-primary p-2 rounded-lg animate-pulse-glow">
             <Bot className="h-6 w-6 text-primary-foreground" />
           </div>
-          <span className="text-xl font-bold gradient-primary bg-clip-text text-transparent">
+          <span className="text-xl font-bold text-white/90">
             FlowBot
           </span>
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
-          <a href="#inicio" className="text-foreground hover:text-primary transition-smooth font-medium">Início</a>
-          <a href="#sobre" className="text-foreground hover:text-primary transition-smooth font-medium">Sobre</a>
-          <a href="#servicos" className="text-foreground hover:text-primary transition-smooth font-medium">Serviços</a>
-          <a href="#beneficios" className="text-foreground hover:text-primary transition-smooth font-medium">Benefícios</a>
-          <a href="#contato" className="text-foreground hover:text-primary transition-smooth font-medium">Contato</a>
+        {/* Desktop Navigation - Central */}
+        <nav className="hidden lg:flex items-center gap-[18px]">
+          <a href="#inicio" className="header-nav-link">Início</a>
+          <a href="#sobre" className="header-nav-link">Sobre</a>
+          <a href="#servicos" className="header-nav-link">Serviços</a>
+          <a href="#beneficios" className="header-nav-link">Benefícios</a>
+          <a href="#contato" className="header-nav-link">Contato</a>
         </nav>
 
-        <div className="hidden md:flex items-center gap-4">
-          <Button 
-            className="btn-fill-gradient text-white shadow-elegant hover:shadow-glow hover:shadow-[0_0_40px_rgba(108,155,255,0.6)] transition-all duration-300 transform hover:scale-105"
+        {/* CTA Button - Right */}
+        <div className="hidden lg:flex items-center">
+          <button 
+            className="header-cta-btn"
             onClick={() => window.open('https://wa.link/nipwbr', '_blank')}
           >
             Demonstração Gratuita
-          </Button>
+          </button>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2"
+          className="lg:hidden p-2 text-white/90 hover:text-white transition-colors"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
         >
-          {isMenuOpen ? <X /> : <Menu />}
+          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-background border-b border-border md:hidden">
-            <nav className="flex flex-col p-4 gap-4">
-              <a href="#inicio" className="text-foreground hover:text-primary transition-smooth font-medium">Início</a>
-              <a href="#sobre" className="text-foreground hover:text-primary transition-smooth font-medium">Sobre</a>
-              <a href="#servicos" className="text-foreground hover:text-primary transition-smooth font-medium">Serviços</a>
-              <a href="#beneficios" className="text-foreground hover:text-primary transition-smooth font-medium">Benefícios</a>
-              <a href="#contato" className="text-foreground hover:text-primary transition-smooth font-medium">Contato</a>
-              <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button 
-                  className="btn-fill-gradient text-white"
+          <div className="absolute top-full left-0 w-full bg-[hsl(260,40%,12%/0.98)] backdrop-blur-lg border-b border-white/10 lg:hidden">
+            <nav className="flex flex-col p-5 gap-2">
+              <a href="#inicio" className="header-nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Início</a>
+              <a href="#sobre" className="header-nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Sobre</a>
+              <a href="#servicos" className="header-nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Serviços</a>
+              <a href="#beneficios" className="header-nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Benefícios</a>
+              <a href="#contato" className="header-nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Contato</a>
+              <div className="pt-4 mt-2 border-t border-white/10">
+                <button 
+                  className="header-cta-btn w-full"
                   onClick={() => window.open('https://wa.link/nipwbr', '_blank')}
                 >
                   Demonstração Gratuita
-                </Button>
+                </button>
               </div>
             </nav>
           </div>
