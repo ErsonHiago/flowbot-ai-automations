@@ -44,7 +44,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
-              className="bg-white text-primary font-semibold hover:bg-white/90 hover:text-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-tech-glow"
+              className="btn-fill-white bg-white text-primary font-semibold hover:text-primary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-tech-glow"
               onClick={() => window.open('https://wa.link/nipwbr', '_blank')}
             >
               <Bot className="mr-2 h-5 w-5" />
@@ -52,7 +52,7 @@ const HeroSection = () => {
             </Button>
             <Button 
               size="lg" 
-              className="bg-white/25 backdrop-blur-md border-2 border-white/50 text-white font-semibold hover:bg-white/35 hover:border-white/70 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-300 transform hover:scale-105"
+              className="btn-fill-glass bg-white/25 backdrop-blur-md border-2 border-white/50 text-white font-semibold hover:border-white/70 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-300 transform hover:scale-105"
               onClick={() => window.open('https://wa.link/nipwbr', '_blank')}
             >
               Agendar demonstração
