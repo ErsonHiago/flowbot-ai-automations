@@ -48,7 +48,7 @@ const ContactSection = () => {
                 <Textarea placeholder="Conte-nos sobre seu projeto e objetivos..." />
               </div>
               <Button 
-                className="w-full gradient-primary text-white shadow-elegant hover:shadow-glow transition-smooth"
+                className="w-full btn-fill-gradient text-white shadow-elegant hover:shadow-glow transition-smooth"
                 onClick={() => window.open('https://wa.link/nipwbr', '_blank')}
               >
                 Quero uma demonstração gratuita
@@ -73,7 +73,7 @@ const ContactSection = () => {
                 </div>
                 <Button 
                   variant="outline" 
-                  className="w-full hover:bg-primary hover:text-primary-foreground hover:shadow-tech transition-tech"
+                  className="w-full btn-fill-effect text-primary-foreground hover:shadow-tech transition-tech"
                   onClick={() => window.open('https://wa.link/nipwbr', '_blank')}
 >
                   <MessageCircle className="mr-2 h-4 w-4" />
