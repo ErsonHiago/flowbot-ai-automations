@@ -8,106 +8,112 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* FlowBot Brand Colors */
+    /* FlowBot Official Brand Colors */
+    /* Primary: #1E5BFF | Secondary: #4FA3FF | White: #FFFFFF | Dark: #0B1E3C */
     --background: 0 0% 100%;
-    --foreground: 0 0% 11%;
+    --foreground: 217 70% 14%; /* #0B1E3C */
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 11%;
+    --card-foreground: 217 70% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 11%;
+    --popover-foreground: 217 70% 14%;
 
-    --primary: 222 100% 70%; /* FlowBot Blue #6C9BFF */
+    --primary: 222 100% 56%; /* FlowBot Blue #1E5BFF */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 230 65% 30%; /* FlowBot Dark Blue #1E2A78 */
+    --secondary: 210 100% 65%; /* FlowBot Light Blue #4FA3FF */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 217 30% 96%;
+    --muted-foreground: 217 30% 40%;
 
-    --accent: 222 100% 70%; /* FlowBot Blue accent */
+    --accent: 210 100% 65%; /* FlowBot Light Blue */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 222 100% 70%;
+    --border: 217 20% 88%;
+    --input: 217 20% 88%;
+    --ring: 222 100% 56%;
 
     --radius: 0.75rem;
 
     /* FlowBot Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(222, 100%, 70%), hsl(230, 65%, 30%), hsl(222, 100%, 80%));
-    --gradient-hero: linear-gradient(135deg, hsl(230, 65%, 30%), hsl(222, 100%, 70%), hsl(240, 100%, 85%));
-    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%), hsl(222, 20%, 98%));
-    --gradient-tech: radial-gradient(circle at 50% 50%, hsl(222, 100%, 70% / 0.2), transparent 70%);
+    --gradient-primary: linear-gradient(135deg, hsl(222, 100%, 56%), hsl(210, 100%, 65%), hsl(222, 100%, 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(217, 70%, 14%), hsl(222, 100%, 56%), hsl(210, 100%, 65%));
+    --gradient-dark: linear-gradient(180deg, hsl(217, 70%, 14%), hsl(217, 70%, 20%));
+    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%), hsl(217, 30%, 98%));
+    --gradient-tech: radial-gradient(circle at 50% 50%, hsl(222, 100%, 56% / 0.15), transparent 70%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(210, 100%, 65% / 0.3), transparent 70%);
 
     /* FlowBot Shadows */
-    --shadow-elegant: 0 10px 40px -10px hsl(222, 100%, 70% / 0.3);
-    --shadow-glow: 0 0 40px hsl(222, 100%, 70% / 0.4), 0 0 80px hsl(222, 100%, 70% / 0.2);
-    --shadow-card: 0 8px 32px hsl(222, 100%, 70% / 0.1);
-    --shadow-tech: 0 0 60px hsl(222, 100%, 70% / 0.5), inset 0 0 60px hsl(222, 100%, 70% / 0.1);
+    --shadow-elegant: 0 10px 40px -10px hsl(222, 100%, 56% / 0.35);
+    --shadow-glow: 0 0 40px hsl(222, 100%, 56% / 0.5), 0 0 80px hsl(210, 100%, 65% / 0.25);
+    --shadow-card: 0 8px 32px hsl(217, 70%, 14% / 0.08);
+    --shadow-tech: 0 0 60px hsl(222, 100%, 56% / 0.4), inset 0 0 60px hsl(210, 100%, 65% / 0.1);
+    --shadow-neon: 0 0 20px hsl(210, 100%, 65% / 0.6), 0 0 40px hsl(222, 100%, 56% / 0.4);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-tech: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-foreground: 217 70% 14%;
+    --sidebar-primary: 222 100% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 30% 96%;
+    --sidebar-accent-foreground: 217 70% 14%;
+    --sidebar-border: 217 20% 88%;
+    --sidebar-ring: 222 100% 56%;
   }
 
   .dark {
-    --background: 0 0% 11%; /* Dark #1C1C1C */
+    --background: 217 70% 14%; /* Dark #0B1E3C */
     --foreground: 0 0% 98%;
 
-    --card: 0 0% 16%;
+    --card: 217 60% 18%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 16%;
+    --popover: 217 60% 18%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 222 100% 70%; /* FlowBot Blue #6C9BFF */
+    --primary: 222 100% 56%; /* FlowBot Blue #1E5BFF */
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 230 65% 30%;
+    --secondary: 210 100% 65%; /* FlowBot Light Blue #4FA3FF */
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 16%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 217 50% 20%;
+    --muted-foreground: 217 20% 70%;
 
-    --accent: 222 100% 70%; /* FlowBot Blue accent */
+    --accent: 210 100% 65%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 222 100% 70%;
+    --border: 217 40% 25%;
+    --input: 217 40% 25%;
+    --ring: 222 100% 56%;
 
     /* Dark mode gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(222, 100%, 70%), hsl(230, 65%, 30%), hsl(222, 100%, 80%));
-    --gradient-hero: linear-gradient(135deg, hsl(0, 0%, 8%), hsl(222, 100%, 60%), hsl(240, 100%, 70%));
-    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 15%), hsl(222, 20%, 18%));
-    --gradient-tech: radial-gradient(circle at 50% 50%, hsl(222, 100%, 70% / 0.3), transparent 70%);
+    --gradient-primary: linear-gradient(135deg, hsl(222, 100%, 56%), hsl(210, 100%, 65%), hsl(222, 100%, 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(217, 70%, 10%), hsl(222, 100%, 45%), hsl(210, 100%, 55%));
+    --gradient-dark: linear-gradient(180deg, hsl(217, 70%, 10%), hsl(217, 70%, 16%));
+    --gradient-card: linear-gradient(145deg, hsl(217, 60%, 18%), hsl(217, 50%, 22%));
+    --gradient-tech: radial-gradient(circle at 50% 50%, hsl(222, 100%, 56% / 0.25), transparent 70%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(210, 100%, 65% / 0.4), transparent 70%);
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-background: 217 70% 12%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 222 100% 56%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 217 50% 20%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 217 40% 25%;
+    --sidebar-ring: 222 100% 56%;
   }
 }
 
@@ -170,29 +176,61 @@ All colors MUST be HSL.
 
   @keyframes pulse-glow {
     0%, 100% { 
-      box-shadow: 0 0 20px hsl(222, 100%, 70% / 0.3);
+      box-shadow: 0 0 20px hsl(222, 100%, 56% / 0.3);
       transform: scale(1);
     }
     50% { 
-      box-shadow: 0 0 60px hsl(222, 100%, 70% / 0.8), 0 0 100px hsl(222, 100%, 70% / 0.4);
+      box-shadow: 0 0 60px hsl(222, 100%, 56% / 0.7), 0 0 100px hsl(210, 100%, 65% / 0.4);
       transform: scale(1.02);
     }
   }
 
   @keyframes tech-glow {
     0%, 100% {
-      box-shadow: 0 0 30px hsl(222, 100%, 70% / 0.4);
+      box-shadow: 0 0 30px hsl(222, 100%, 56% / 0.4);
     }
     50% {
-      box-shadow: 0 0 60px hsl(222, 100%, 70% / 0.8), 0 0 90px hsl(222, 100%, 70% / 0.4);
+      box-shadow: 0 0 60px hsl(222, 100%, 56% / 0.7), 0 0 90px hsl(210, 100%, 65% / 0.4);
     }
   }
 
-  @keyframes matrix-rain {
-    0% { transform: translateY(-100vh); opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { transform: translateY(100vh); opacity: 0; }
+  @keyframes neon-pulse {
+    0%, 100% {
+      text-shadow: 0 0 10px hsl(210, 100%, 65% / 0.5), 0 0 20px hsl(222, 100%, 56% / 0.3);
+    }
+    50% {
+      text-shadow: 0 0 20px hsl(210, 100%, 65% / 0.8), 0 0 40px hsl(222, 100%, 56% / 0.5), 0 0 60px hsl(210, 100%, 65% / 0.3);
+    }
+  }
+
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  @keyframes particle-float {
+    0%, 100% { 
+      transform: translateY(0) translateX(0) scale(1);
+      opacity: 0.6;
+    }
+    25% { 
+      transform: translateY(-20px) translateX(10px) scale(1.1);
+      opacity: 1;
+    }
+    50% { 
+      transform: translateY(-10px) translateX(-5px) scale(0.9);
+      opacity: 0.8;
+    }
+    75% { 
+      transform: translateY(-25px) translateX(15px) scale(1.05);
+      opacity: 0.9;
+    }
   }
 
   @keyframes slide-up {
@@ -204,6 +242,11 @@ All colors MUST be HSL.
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  @keyframes grid-flow {
+    0% { transform: perspective(500px) rotateX(60deg) translateY(0); }
+    100% { transform: perspective(500px) rotateX(60deg) translateY(50px); }
   }
 
   .animate-float {
@@ -218,17 +261,61 @@ All colors MUST be HSL.
     animation: tech-glow 3s ease-in-out infinite;
   }
 
+  .animate-neon-pulse {
+    animation: neon-pulse 2s ease-in-out infinite;
+  }
+
+  .animate-gradient-shift {
+    background-size: 200% 200%;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  .animate-shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .animate-shimmer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, hsl(0, 0%, 100% / 0.2), transparent);
+    animation: shimmer 2s infinite;
+  }
+
   .tech-hover {
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .tech-hover:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 20px 40px hsl(222, 100%, 70% / 0.3);
+    box-shadow: 0 20px 40px hsl(222, 100%, 56% / 0.3);
   }
 
   .animate-slide-up {
     animation: slide-up 0.6s ease-out forwards;
+  }
+
+  /* Glassmorphism */
+  .glass {
+    background: hsl(0, 0%, 100% / 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid hsl(0, 0%, 100% / 0.2);
+  }
+
+  .glass-dark {
+    background: hsl(217, 70%, 14% / 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(222, 100%, 56% / 0.2);
+  }
+
+  /* Neon borders */
+  .neon-border {
+    border: 1px solid hsl(222, 100%, 56% / 0.5);
+    box-shadow: 0 0 10px hsl(222, 100%, 56% / 0.3), inset 0 0 10px hsl(222, 100%, 56% / 0.1);
   }
 
   /* Scroll animations */
@@ -255,5 +342,30 @@ All colors MUST be HSL.
 
   .animate-bounce-slow {
     animation: bounce-slow 2s ease-in-out infinite;
+  }
+
+  /* Tech grid background */
+  .tech-grid {
+    background-image: 
+      linear-gradient(hsl(222, 100%, 56% / 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(222, 100%, 56% / 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  /* Glowing orbs */
+  .glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.5;
+    animation: particle-float 8s ease-in-out infinite;
+  }
+
+  .glow-orb-primary {
+    background: hsl(222, 100%, 56%);
+  }
+
+  .glow-orb-secondary {
+    background: hsl(210, 100%, 65%);
   }
 }
