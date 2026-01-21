@@ -20,7 +20,6 @@ const Header = () => {
         {/* Desktop Navigation - Central */}
         <nav className="hidden lg:flex items-center gap-[18px]">
           <a href="#inicio" className="header-nav-link">Início</a>
-          <a href="#sobre" className="header-nav-link">Sobre</a>
           <a href="#servicos" className="header-nav-link">Serviços</a>
           <a href="#beneficios" className="header-nav-link">Benefícios</a>
           <a href="#contato" className="header-nav-link">Contato</a>
@@ -50,7 +49,6 @@ const Header = () => {
           <div className="absolute top-full left-0 w-full bg-[hsl(260,40%,12%/0.98)] backdrop-blur-lg border-b border-white/10 lg:hidden">
             <nav className="flex flex-col p-5 gap-2">
               <a href="#inicio" className="header-nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Início</a>
-              <a href="#sobre" className="header-nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Sobre</a>
               <a href="#servicos" className="header-nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Serviços</a>
               <a href="#beneficios" className="header-nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Benefícios</a>
               <a href="#contato" className="header-nav-link-mobile" onClick={() => setIsMenuOpen(false)}>Contato</a>
